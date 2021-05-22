@@ -1,0 +1,24 @@
+{
+	"Stock": [
+		{
+			"stockName": "Paytm",
+			"numberOfShare": 15,
+			"price": 120
+		},
+		{
+			"stockName": "Phonepe",
+			"numberOfShare": 4,
+			"price": 990
+		},
+		{
+			"stockName": "Freecharge",
+			"numberOfShare": 10,
+			"price": 200
+		},
+		{
+			"stockName": "Googlepay",
+			"numberOfShare": 5,
+			"price": 500
+		}
+	]
+}

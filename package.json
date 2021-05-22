@@ -1,0 +1,26 @@
+{
+  "name": "node-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sawarkarrajat/node-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sawarkarrajat/node-practice/issues"
+  },
+  "homepage": "https://github.com/sawarkarrajat/node-practice#readme",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.4.0",
+    "readline-sync": "^1.4.10",
+    "util": "^0.12.3"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "company":[
+    {
+      "symbol":"samsung",
+      "pricePerShare":40,
+      "totalShare":20
+    },
+    {
+      "symbol":"nokia",
+      "pricePerShare":30,
+      "totalShare":17
+    },
+    {
+      "symbol":"Micromax",
+      "pricePerShare":18,
+      "totalShare":25
+    },
+    {
+      "symbol":"yuphoria",
+      "pricePerShare":"30",
+      "totalShare":"70"
+    }
+  ]
+}
