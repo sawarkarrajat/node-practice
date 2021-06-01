@@ -19,7 +19,7 @@
         let stock = prompt('enter number of stocks you bought: ');
         if (isNaN(stock)) throw "invalid input"
       } catch (err) {
-        console.log(err);
+       console.error(err.message);
       }
       for (let i = 1; i <= stock; i++) {
         try {
@@ -39,7 +39,7 @@
           })
           console.log(arrayOfObjects);
         } catch (err) {
-          console.log(err);
+         console.error(err.message);
         }
       }
     }

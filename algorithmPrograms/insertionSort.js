@@ -9,16 +9,16 @@
  * @since    : 17-04-2021
  *************************************************************************************************/
 let Utility = require('../utility/Utility');
-let readline = require('readline-sync');
-try {
-  function insert() {
+function insert() {
+  try {
     let arr = [];
     let res = Utility.inputArray(arr);
     let res1 = Utility.insertion(res);
     console.log(res1);
+  } catch (error) {
+    console.error(error.message);
+    throw error;
   }
-} catch (error) {
-  console.log('Error: ', error);
 }
 
 insert();

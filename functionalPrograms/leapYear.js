@@ -11,12 +11,12 @@
  *************************************************************************************************/
 
 let Utility = require('../utility/Utility');
-try {
-  function leapY() {
+function leapY() {
+  try {
     Utility.leap();
+  } catch (error) {
+    console.error(error.message);
   }
-} catch (error) {
-  console.log('Error!', error);
 }
 
 leapY();

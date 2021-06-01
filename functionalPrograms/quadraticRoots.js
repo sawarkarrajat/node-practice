@@ -11,17 +11,17 @@
 
 let Utility = require('../utility/Utility');
 let readline = require('readline-sync');
-try {
-  function roots() {
-    console.log('expression format: a*x*x + b*x + c ');
-    let a = readline.question('Enter the value of a in above expression: ');
-    let b = readline.question('Enter the value of b in above expression: ');
-    let c = readline.question('Enter the value of c in above expression: ');
+function roots() {
+  console.log('expression format: a*x*x + b*x + c ');
+  let a = readline.question('Enter the value of a in above expression: ');
+  let b = readline.question('Enter the value of b in above expression: ');
+  let c = readline.question('Enter the value of c in above expression: ');
 
+  try {
     let roots = Utility.qroots(a, b, c);
     console.log(roots + '  are two roots');
+  } catch (error) {
+    console.error(error.message);
   }
-} catch (error) {
-  console.log('Error!', error);
 }
 roots();

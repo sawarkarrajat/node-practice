@@ -11,8 +11,8 @@
 
 let Utility = require('../utility/Utility');
 let readline = require('readline-sync');
-try {
-  function findnum() {
+const findnum = () => {
+  try {
     let N = readline.question('Enter a number N, where (N = 2^n) :  ');
     console.log(
       'think of a number between 0 - ' + (N - 1) + ' and answer the questions'
@@ -31,9 +31,10 @@ try {
     } else {
       console.log('Invalid Input');
     }
+  } catch (error) {
+    console.error(error.message);
+    throw error;
   }
-} catch (error) {
-  console.log('Error: ', error);
-}
+};
 
 findnum();

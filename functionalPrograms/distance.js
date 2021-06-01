@@ -9,12 +9,12 @@
  * @since    : 17-04-2021
  *************************************************************************************************/
 let Utility = require('../utility/Utility');
-try {
-  function eDistance() {
+function eDistance() {
+  try {
     Utility.euclidist();
+  } catch (error) {
+    console.error(error.message);
   }
-} catch (error) {
-  console.log('Error!', error);
 }
 
 eDistance();

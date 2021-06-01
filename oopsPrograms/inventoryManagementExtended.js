@@ -52,7 +52,7 @@ function inventoryMenue() {
         let num = prompt('Enter No. of times you want to add item: ');
         if (isNaN(num)) throw 'invalid input';
       } catch (err) {
-        console.log(err);
+       console.error(err.message);
       }
       for (let i = 0; i < num; i++) {
         try {
@@ -63,7 +63,7 @@ function inventoryMenue() {
           let price = prompt('Please enter the price per Kg.: ');
           if (isNaN(price)) throw 'invalid input';
         } catch (err) {
-          console.log(err);
+         console.error(err.message);
         }
         if (
           nameRestriction.test(Name) &&
@@ -150,7 +150,7 @@ function inventoryMenue() {
      */
     process.exit();
   } catch (err) {
-    console.log(err);
+   console.error(err.message);
   }
 }
 /**

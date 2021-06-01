@@ -22,14 +22,11 @@ module.exports = {
                * calculate total and print
                */
               console.log(
-                'Per Kg. of ' +
-                  jsonGrocery.Rice[i].name +
-                  ' costs ' +
-                  jsonGrocery.Rice[i].price +
-                  ' and for ' +
-                  weight +
-                  ' Kgs. costs ' +
+                `Per Kg. of ${jsonGrocery.Rice[i].name} costs ${
+                  jsonGrocery.Rice[i].price
+                } and for ${weight} Kgs. costs ${
                   weight * jsonGrocery.Rice[i].price
+                }`
               );
             }
           } else {
@@ -44,14 +41,11 @@ module.exports = {
                * calculate total and print
                */
               console.log(
-                'Per Kg. of ' +
-                  jsonGrocery.Wheats[i].name +
-                  ' costs ' +
-                  jsonGrocery.Wheats[i].price +
-                  ' and for ' +
-                  weight +
-                  ' Kgs. costs ' +
+                `Per Kg. of ${jsonGrocery.Wheats[i].name} costs ${
+                  jsonGrocery.Wheats[i].price
+                } and for ${weight} Kgs. costs ${
                   weight * jsonGrocery.Wheats[i].price
+                }`
               );
             }
           } else {
@@ -66,14 +60,11 @@ module.exports = {
                * calculate total and print
                */
               console.log(
-                'Per Kg. of ' +
-                  jsonGrocery.Pulses[i].name +
-                  ' costs ' +
-                  jsonGrocery.Pulses[i].price +
-                  ' and for ' +
-                  weight +
-                  ' Kgs. costs ' +
+                `Per Kg. of ${jsonGrocery.Pulses[i].name} costs ${
+                  jsonGrocery.Pulses[i].price
+                } and for ${weight} Kgs. costs ${
                   weight * jsonGrocery.Pulses[i].price
+                }`
               );
             }
           } else {

@@ -10,9 +10,9 @@
  *************************************************************************************************/
 let Utility = require('../utility/Utility');
 let readline = require('readline-sync');
-try {
-  function stopWatch() {
-    let startTime = readline.question('Press 1 to start time  => ');
+function stopWatch() {
+  let startTime = readline.question('Press 1 to start time  => ');
+  try {
     if (startTime == '1') {
       let start = Utility.getCurrentTime();
       let stopTime = readline.question('Press 0 to stop time   => ');
@@ -26,9 +26,9 @@ try {
       console.log('invalid input');
       stopWatch();
     }
+  } catch (error) {
+    console.error(error.message);
   }
-} catch (error) {
-  console.log('Error!', error);
 }
 
 stopWatch();

@@ -10,12 +10,12 @@
  *************************************************************************************************/
 
 let Utility = require('../utility/Utility');
-try {
-  function nthHarmonicNumber() {
+function nthHarmonicNumber() {
+  try {
     Utility.harmonic();
+  } catch (error) {
+    console.error(error.message);
   }
-} catch (error) {
-  console.log('Error!', error);
 }
 
 nthHarmonicNumber();

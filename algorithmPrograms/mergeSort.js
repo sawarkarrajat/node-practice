@@ -9,16 +9,16 @@
  * @since    : 17-04-2021
  *************************************************************************************************/
 let Utility = require('../utility/Utility');
-let readline = require('readline-sync');
-try {
-  function mergesort() {
+const mergesort = () => {
+  try {
     let arr = [];
     let res1 = Utility.inputArray(arr);
     let res2 = Utility.mergeSort(res1);
     console.log('Merge sorted result ' + res2);
+  } catch (error) {
+    console.error(error.message);
+    throw error;
   }
-} catch (error) {
-  console.log('Error: ', error);
-}
+};
 
 mergesort();

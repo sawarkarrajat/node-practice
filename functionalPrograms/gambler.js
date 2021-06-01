@@ -9,11 +9,11 @@
  * @since    : 17-04-2021
  *************************************************************************************************/
 let Utility = require('../utility/Utility');
-try {
-  function gambling() {
+function gambling() {
+  try {
     Utility.gamble();
+  } catch (error) {
+    console.error(error.message);
   }
-} catch (error) {
-  console.log('Error!', error);
 }
 gambling();

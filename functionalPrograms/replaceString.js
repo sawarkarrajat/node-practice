@@ -12,13 +12,13 @@
 
 let Utility = require('../utility/Utility');
 let readline = require('readline-sync');
-try {
-  function replaceStringUserWithInput() {
+function replaceStringUserWithInput() {
+  try {
     let name = readline.question('Enter your Name : ');
     Utility.replaceS(name);
+  } catch (error) {
+    console.error(error.message);
   }
-} catch (error) {
-  console.log('Error!', error);
 }
 
 replaceStringUserWithInput();

@@ -22,7 +22,8 @@ let anagrm = () => {
       console.log('NOT an ANAGRAM');
     }
   } catch (error) {
-    console.log('Error: ', error);
+     console.error(error.message);
+     throw error;
   }
 };
 //function call on execution

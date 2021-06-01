@@ -32,7 +32,7 @@ class Company {
         let price = read.question('Enter the price per item: ');
         if (isNaN(price)) throw 'invalid input';
       } catch (err) {
-        console.log(err);
+       console.error(err.message);
       }
       /**
        * object customer
@@ -81,7 +81,7 @@ class Company {
         date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
       console.log('The item is sold at--> ' + time);
     } catch (err) {
-      console.log(err);
+     console.error(err.message);
     }
   }
   /**
@@ -108,7 +108,7 @@ try {
   );
   if (isNaN(num)) throw 'invalid input';
 } catch (err) {
-  console.log(err);
+ console.error(err.message);
 }
 /**
  * calling functions

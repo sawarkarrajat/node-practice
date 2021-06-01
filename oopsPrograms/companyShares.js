@@ -83,9 +83,7 @@ function Stocklinkedlist() {
       '../oopsPrograms/JSONfiles/companyData.json',
       JSON.stringify(b),
       'utf-8',
-      function () {
-        console.log('done');
-      }
+      () => console.log('done')
     );
     console.log('Data saved to file');
     Stocklinkedlist();

@@ -25,7 +25,9 @@ module.exports = {
               /**
                * calculate total shares and print the price
                */
-              console.log("Per Stock in " + jsonStocks.Stock[0].stockName + " is sold for Rs." + jsonStocks.Stock[0].price + " and for " + share + " shares the price would be Rs." + total);
+              console.log(
+                `Per Stock in ${jsonStocks.Stock[0].stockName} is sold for Rs.${jsonStocks.Stock[0].price} and for ${share} shares the price would be Rs.${total}`
+              );
           }
           else {
               console.log("please enter integers only! OR Enter shares less than or equal to available");
@@ -43,7 +45,9 @@ module.exports = {
               /**
                * calculate total shares and print the price
                */
-              console.log("Per Stock in " + jsonStocks.Stock[1].stockName + " is sold for Rs." + jsonStocks.Stock[1].price + " and for " + share + " shares the price would be Rs." + total);
+              console.log(
+                `Per Stock in ${jsonStocks.Stock[1].stockName} is sold for Rs.${jsonStocks.Stock[1].price} and for ${share} shares the price would be Rs.${total}`
+              );
           }
           else {
               console.log("please enter integers only! OR Enter shares less than or equal to available");
@@ -61,7 +65,9 @@ module.exports = {
               /**
                * calculate total shares and print the price
                */
-              console.log("Per Stock in " + jsonStocks.Stock[2].stockName + " is sold for Rs." + jsonStocks.Stock[2].price + " and for " + share + " shares the price would be Rs." + total);
+              console.log(
+                `Per Stock in ${jsonStocks.Stock[2].stockName} is sold for Rs.${jsonStocks.Stock[2].price} and for ${share} shares the price would be Rs.${total}`
+              );
           }
           else {
               console.log("please enter integers only! OR Enter shares less than or equal to available");
@@ -79,7 +85,9 @@ module.exports = {
               /**
                * calculate total shares and print the price
                */
-              console.log("Per Stock in " + jsonStocks.Stock[3].stockName + " is sold for Rs." + jsonStocks.Stock[3].price + " and for " + share + " shares the price would be Rs." + total);
+              console.log(
+                `Per Stock in ${jsonStocks.Stock[3].stockName} is sold for Rs.${jsonStocks.Stock[3].price} and for ${share} shares the price would be Rs.${total}`
+              );
           }
           else {
               console.log("please enter integers only! OR Enter shares less than or equal to available");

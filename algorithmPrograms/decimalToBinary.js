@@ -10,13 +10,14 @@
  *************************************************************************************************/
 let Utility = require('../utility/Utility');
 let readline = require('readline-sync');
-try {
-  function tobinary() {
+function tobinary() {
+  try {
     let num = readline.question('Enter your decimal value ');
     let res = Utility.toBinary(num);
     console.log('convertes form ', res);
+  } catch (error) {
+    console.error(error.message);
+    throw error;
   }
-} catch (error) {
-  console.log('Error: ', error);
 }
 tobinary();

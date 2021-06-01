@@ -20,7 +20,6 @@ function balancedParen() {
       sUtil.push(element);
     }
   });
-  // console.log("",);
   console.log('value of count ', sUtil.count);
   console.log('value of peek ', sUtil.peek());
   console.log('value of size ', sUtil.size());

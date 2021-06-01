@@ -18,7 +18,7 @@ try {
     console.log('Total no.of notes is: ' + totalNotes);
   }
 } catch (error) {
-  console.log('Error!', error);
+  console.error(error.message);
 }
 //method call for vending machine execution
 vendingM();

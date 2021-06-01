@@ -17,7 +17,8 @@ try {
     Utility.primeNum(num);
   }
 } catch (error) {
-  console.log('Error: ', error);
+   console.error(error.message);
+   throw error;
 }
 
 prime();

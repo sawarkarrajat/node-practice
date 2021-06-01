@@ -29,5 +29,6 @@ try {
   if (result == true) console.log('String is present');
   else console.log('Not present');
 } catch (error) {
-  console.log('Error: ', error);
+   console.error(error.message);
+   throw error;
 }

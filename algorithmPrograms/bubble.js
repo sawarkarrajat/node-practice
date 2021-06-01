@@ -9,14 +9,15 @@
  * @since    : 17-04-2021
  *************************************************************************************************/
 let Utility = require('../utility/Utility');
-try {
-  function bubblesort() {
+const bubblesort = () => {
+  try {
     let arr = [];
     let result = Utility.bubbleSort(Utility.inputArray(arr));
     console.log(result);
+  } catch (error) {
+     console.error(error.message);
+    throw error;
   }
-} catch (error) {
-  console.log('Error: ', error);
-}
+};
 
 bubblesort();
